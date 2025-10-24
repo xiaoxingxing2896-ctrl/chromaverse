@@ -1,29 +1,41 @@
-<!DOCTYPE html>
-<html lang="zh">
+<!doctype html>
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>关于我们 - 新春会</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>新春会 - 关于我们</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-<header>
-  <button id="toggle-btn">☰</button>
-  <h1>新春会</h1>
-</header>
+  <header class="site-header">
+    <button id="toggle-btn" aria-label="打开侧栏">☰</button>
+    <div class="site-title">新春会</div>
+  </header>
 
-    <div id="sidebar" class="sidebar">
-      <a href="index.html" >主页</a>
-      <a href="core.html" >核心价值</a>
-      <a href="dashboard.html" >动态数据看板</a>
-      <a href="about.html" class="active">关于我们</a>
-      <a href="join.html" >加入我们</a>
-      <a href="support.html" >支持我们</a>
-    </div>
-    
-<main class="content">
-<h2>关于我们</h2><p>这里展示团队故事与愿景。</p>
-</main>
+  <aside id="sidebar" class="sidebar" aria-hidden="false">
+    <nav class="nav">
+      <a href="index.html">🏠 首页</a>
+      <a href="core.html">💎 核心价值</a>
+      <a href="dashboard.html">📊 动态数据看板</a>
+      <a href="about.html" class="active">👥 关于我们</a>
+      <a href="join.html">🤝 加入我们</a>
+      <a href="support.html">❤️ 支持我们</a>
+    </nav>
+  </aside>
+
+  <main class="content" id="content">
+    <section>
+      <h1>关于我们</h1>
+      <p class="muted">我们的团队与故事：在这里写下品牌/组织背景、使命、联系方式等。</p>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>联系方式</h3>
+        <p>邮箱：contact@example.com<br>电话：+86 100-0000-0000</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">© 2025 新春会 • 保留所有权利</footer>
+  </main>
 </body>
 </html>
